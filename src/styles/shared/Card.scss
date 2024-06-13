@@ -1,0 +1,40 @@
+@import "../common/styles";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.3rem;
+  flex-grow: 1;
+  width: 100%;
+
+  @include mobile {
+    width: unset;
+  }
+
+  .card-header {
+    font-size: 1.1rem;
+    font-weight: 700;
+    max-width: 70%;
+    margin: 0.5rem auto 1rem;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .card-content {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 0 1rem;
+    flex-grow: 1;
+  }
+
+  .card-media {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+  }
+}

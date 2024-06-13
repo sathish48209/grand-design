@@ -1,0 +1,36 @@
+@import "../common/styles";
+@import "../common/_variables";
+
+.section-container {
+  background-color: $section-bg-color;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  @include mobile {
+    padding: 0.75rem;
+  }
+
+  .section-logo {
+    width: 180px;
+    @include mobile {
+      width: 100px;
+    }
+  }
+
+  .section-header {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 1rem 2rem 2rem;
+    @include mobile {
+      font-size: 1.5rem;
+      margin: 0.7rem 1.5rem 1.5rem;
+    }
+  }
+
+  .section-card-container {
+    display: flex;
+    gap: 1rem;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}
